@@ -14,10 +14,10 @@ const tempoNaTela = document.querySelector(`#timer`)
 
 //  musica
 const musicaFocoinput = document.querySelector(`#alternar-musica`)
-const musica = new Audio(`/sons/luna-rise-part-one.mp3`)
-const somPlay = new Audio(`/sons/play.wav`)
-const somPause = new Audio(`/sons/pause.mp3`)
-const somBeep = new Audio(`/sons/beep.mp3`)
+const musica = new Audio(`./sons/luna-rise-part-one.mp3`)
+const somPlay = new Audio(`./sons/play.wav`)
+const somPause = new Audio(`./sons/pause.mp3`)
+const somBeep = new Audio(`./sons/beep.mp3`)
 
 musica.loop = true
 
