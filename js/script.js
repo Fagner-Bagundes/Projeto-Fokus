@@ -54,7 +54,7 @@ longoBT.addEventListener(`click`, () => {
 function alterarContexto(contexto) {
     mostrarTempo();
     html.setAttribute(`data-contexto`, contexto);
-    banner.setAttribute(`src`, `/imagens/${contexto}.png`)
+    banner.setAttribute(`src`, `./imagens/${contexto}.png`)
     if (contexto === `foco`) {
         titulo.innerHTML= ` Otimize sua produtividade,<br>
         <strong class="app__title-strong">mergulhe no que importa.</strong`;
@@ -98,12 +98,12 @@ function iniciarOuPausar() {
     if (intervaloId) {
         somPause.play()
         iniciarOuPausarBT.textContent = `Começar`
-        playPouseIcon.setAttribute(`src`, `/imagens/play_arrow.png`)
+        playPouseIcon.setAttribute(`src`, `./imagens/play_arrow.png`)
         zerar();
         
         return
     } else{
-        playPouseIcon.setAttribute(`src`, `/imagens/pause.png`)
+        playPouseIcon.setAttribute(`src`, `./imagens/pause.png`)
         somPlay.play()
         iniciarOuPausarBT.textContent = `Pausar`
     }
